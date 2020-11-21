@@ -30,7 +30,7 @@
 
   </Target>
     
-  <UsingTask TaskName="_WixNuGetPackager_DownloadNuGet" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll">
+  <UsingTask TaskName="_WixNuGetPackager_DownloadNuGet" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
       <ParameterGroup>
           <OutputFilename ParameterType="System.String" Required="true" />
       </ParameterGroup>
